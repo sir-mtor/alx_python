@@ -1,12 +1,18 @@
-def convert_to_celsius(fahrenheit):
+def reverse_string(string):
     """
-    Converts a temperature from Fahrenheit to Celsius.
+    Reverses a given string.
 
     Parameters:
-    fahrenheit (float): The temperature in Fahrenheit.
+    string (str): The input string.
 
     Returns:
-    float: The temperature in Celsius.
+    str: The reversed string.
     """
-    celsius = (fahrenheit - 32) * 5 / 9
-    return celsius
+    reversed_str = string[::-1]
+    return reversed_str
+
+# Example usage:
+input_str = "Hello, World!"
+reversed_result = reverse_string(input_str)
+print(f"The reverse of '{input_str}' is: '{reversed_result}'")
+
