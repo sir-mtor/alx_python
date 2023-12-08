@@ -1,13 +1,5 @@
 def fibonacci_sequence(n):
-    """
-    Generates a list of the first n Fibonacci numbers.
-
-    Parameters:
-    n (int): The number of Fibonacci numbers to generate.
-
-    Returns:
-    list: A list of the first n Fibonacci numbers.
-    """
+    
     if n <= 0:
         return [] 
 
@@ -18,7 +10,18 @@ def fibonacci_sequence(n):
 
     return fibonacci_numbers[:n]
 
-# EXAMPLE:
-num_terms = 8
-fibonacci_result = fibonacci_sequence(num_terms)
-print(f"The first {num_terms} Fibonacci numbers are: {fibonacci_result}")
+# def fibonacci_sequence(n):
+    if n <= 0:
+        return []
+    elif n == 1:
+        return [0]
+    elif n == 2:
+        return [0, 1]
+    else:
+        sequence = [0, 1]
+        while len(sequence) < n:
+            next_number = sequence[-1] + sequence[-2]
+            sequence.append(next_number)
+        return sequence
+
+
