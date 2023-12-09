@@ -13,7 +13,6 @@ def safe_print_division(a, b):
     finally:
         print("Finally block executed.")
 
-# Example usage:
 a = 10
 b = 2
 safe_print_division(a, b)
