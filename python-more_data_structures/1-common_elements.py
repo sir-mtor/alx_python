@@ -11,8 +11,9 @@ def common_elements(set_1, set_2):
 
     return common_set
 
-set_1 = {1, 2, 3, 4, 5}
-set_2 = {4, 5, 6, 7, 8}
+set_1 = { "Python", "C", "Javascript" }
+set_2 = { "Bash", "C", "Ruby", "Perl" }
+c_set = common_elements(set_1, set_2)
 
 result = common_elements(set_1, set_2)
 print(result)
