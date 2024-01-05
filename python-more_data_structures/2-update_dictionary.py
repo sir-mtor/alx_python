@@ -8,7 +8,7 @@ def update_dictionary(a_dictionary, key, value):
     
     return a_dictionary
 
-# Example usage:
+
 my_dictionary = {'a': 1, 'b': 2, 'c': 3}
 
 update_dictionary(my_dictionary, 'b', 5)  # Replace value for existing key 'b'
