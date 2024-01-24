@@ -1,8 +1,7 @@
 """
 6-number_odd_or_even.py
 ----------------
-
-A Flask web application that displays "Hello HBNB!" at the root ("/"),
+ "Hello HBNB!" at the root ("/"),
 "HBNB" at the route "/hbnb", "C " followed by the value of the text
 variable (underscores replaced with spaces) at the route "/c/<text>",
 "Python " followed by the value of the text variable (underscores
