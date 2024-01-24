@@ -1,7 +1,7 @@
 """
 6-number_odd_or_even.py
 ----------------
- "Hello HBNB!" at the root ("/"),
+ A Flask app "Hello HBNB!" at the root ("/"),
 "HBNB" at the route "/hbnb", "C " followed by the value of the text
 variable (underscores replaced with spaces) at the route "/c/<text>",
 "Python " followed by the value of the text variable (underscores
