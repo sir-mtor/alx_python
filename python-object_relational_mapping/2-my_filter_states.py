@@ -50,3 +50,4 @@ for obj in cursor:
     print(obj)
 cursor.close()
 connect.close()
+'''
