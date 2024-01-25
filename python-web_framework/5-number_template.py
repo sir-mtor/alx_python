@@ -50,7 +50,7 @@ def python_route(text="is cool"):
 
 @app.route('/number/<int:n>', strict_slashes=False)
 def number_route(n):
-    return f'{n} is a number'
+    return f'{{n}}is a number'
 
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def number_template(n):
