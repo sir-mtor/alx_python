@@ -1,3 +1,4 @@
+'''
 import MySQLdb
 import sys
 
@@ -36,3 +37,41 @@ if __name__ == "__main__":
 
     # Call the function to filter and list states
     filter_states_by_name_starting_with_N(mysql_username, mysql_password, database_name)
+'''
+
+#!/usr/bin/python3
+import MySQLdb
+import sys
+
+if __name__ == "__main__":
+    # Check if the correct number of arguments is provided
+    if len(sys.argv) != 4:
+        print("Usage: {} <mysql_username> <mysql_password> <database_name>".format(sys.argv[0]))
+        sys.exit(1)
+
+    # Get command line arguments
+    username, password, database = sys.argv[1], sys.argv[2], sys.argv[3]
+
+    # Connect to MySQL server
+    db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database)
+
+    # Create a cursor object
+    cursor = db.cursor()
+
+    # Get the state name to search
+    state_name = input("Enter state name to search: ")
+
+    # Execute the SQL query to fetch states based on the provided state name
+    query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC;".format(state_name)
+    cursor.execute(query)
+
+    # Fetch all the rows
+    rows = cursor.fetchall()
+
+    # Print the results
+    for row in rows:
+        print(row)
+
+    # Close the cursor and database connection
+    cursor.close()
+    db.close()
