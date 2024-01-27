@@ -9,7 +9,7 @@ def filter_states_by_name_starting_with_N(username, password, database):
 
     cursor = db.cursor()
 
-    query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC"
+    query = "SELECT * FROM states WHERE name LIKE 'N%'OR name LIKE 'n%' ORDER BY states.id ASC"
     cursor.execute(query)
 
     states = cursor.fetchall()
@@ -31,7 +31,7 @@ if __name__ == "__main__":
 
     filter_states_by_name_starting_with_N(mysql_username, mysql_password, database_name)
 '''
-#!/usr/bin/python3
+
 import MySQLdb
 import sys
 
@@ -57,7 +57,7 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     # Execute SQL query to retrieve states starting with 'N'
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' OR name LIKE 'n%' ORDER BY id ASC")
 
     # Fetch all the rows in a list of tuples
     results = cursor.fetchall()
