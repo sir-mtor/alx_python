@@ -62,7 +62,4 @@ if __name__ == "__main__":
         r = Rectangle(0, 4)
     except ValueError as e:
         print("[ValueError]", e)
-    try:
-        print("Is Rectangle a subclass of BaseGeometry?", issubclass(Rectangle, BaseGeometry))
-    except Exception as e:
-        print("[Exception]", e)
+    print("Is Rectangle a subclass of BaseGeometry?", issubclass(Rectangle, BaseGeometry))
