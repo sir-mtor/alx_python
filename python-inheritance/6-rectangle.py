@@ -33,7 +33,7 @@ class BaseGeometry:
         if type(value) is not int:
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
-            raise ValueError(f"{name} must be > 0")
+            raise ValueError(f"{name} must be greater than 0")
 
 class Rectangle(BaseGeometry):
     """
@@ -59,11 +59,10 @@ class Rectangle(BaseGeometry):
 # Test code
 if __name__ == "__main__":
     try:
-        r = Rectangle(3, 4)
-        print("Width:", r.__width)  # Accessing private attribute (should raise an AttributeError)
-    except AttributeError as e:
-        print("Caught AttributeError:", e)
-    try:
-        r = Rectangle(3, -4)  # Trying to create a rectangle with negative height (should raise a ValueError)
+        r = Rectangle(0, 4)
     except ValueError as e:
-        print("Caught ValueError:", e)
+        print("[ValueError]", e)
+    try:
+        print("Is Rectangle a subclass of BaseGeometry?", issubclass(Rectangle, BaseGeometry))
+    except Exception as e:
+        print("[Exception]", e)
