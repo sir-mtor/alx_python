@@ -10,6 +10,7 @@ if __name__ == "__main__":
     password = sys.argv[2]
     database = sys.argv[3]
 
+    # Connect to MySQL server
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
@@ -17,13 +18,19 @@ if __name__ == "__main__":
         passwd=password,
         db=database
     )
+
+    # Create a cursor object using cursor() method
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' OR name LIKE 'n%' ORDER BY id ASC")
+    # Execute SQL query to retrieve states starting with 'N'
+    cursor.execute("SELECT * FROM states WHERE name LIKE 'n%' OR name LIKE 'N%' ORDER BY id ASC")
 
+    # Fetch all the rows in a list of tuples
     results = cursor.fetchall()
 
+    # Print the results
     for row in results:
         print(row)
 
+    # Close the database connection
     db.close()
