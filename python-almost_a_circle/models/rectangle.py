@@ -95,8 +95,8 @@ if __name__ == "__main__":
         print("[{}] {}".format(e.__class__.__name__, e))
 
         def area(self):
-        """ Method to calculate the area of the rectangle """
-        return self.width * self.height
+    """ Method to calculate the area of the rectangle """
+   return self.width * self.height
 
 if __name__ == "__main__":
     r1 = Rectangle(3, 2)
