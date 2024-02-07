@@ -11,7 +11,6 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-''''
     @property
     def width(self):
         """ Getter for width """
@@ -67,4 +66,3 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
-'''
