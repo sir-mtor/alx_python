@@ -94,12 +94,12 @@ if __name__ == "__main__":
     except Exception as e:
         print("[{}] {}".format(e.__class__.__name__, e))
 
-        def area(self):
-    """ Method to calculate the area of the rectangle """
-   return self.width * self.height
-
-if __name__ == "__main__":
-    r1 = Rectangle(3, 2)
+    def area(self):
+        """ Method to calculate the area of the rectangle """
+        return self.width * self.height
+    
+    if __name__ == "__main__":
+      r1 = Rectangle(3, 2)
     print(r1.area())
 
     r2 = Rectangle(2, 10)
