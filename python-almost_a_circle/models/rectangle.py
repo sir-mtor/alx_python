@@ -70,7 +70,7 @@ class Rectangle(Base):
         elif value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
-        
+
 if __name__ == "__main__":
     try:
         Rectangle(10, "2")
@@ -93,3 +93,17 @@ if __name__ == "__main__":
         Rectangle(10, 2, 3, -1)
     except Exception as e:
         print("[{}] {}".format(e.__class__.__name__, e))
+
+        def area(self):
+        """ Method to calculate the area of the rectangle """
+        return self.width * self.height
+
+if __name__ == "__main__":
+    r1 = Rectangle(3, 2)
+    print(r1.area())
+
+    r2 = Rectangle(2, 10)
+    print(r2.area())
+
+    r3 = Rectangle(8, 7, 0, 0, 12)
+    print(r3.area())
