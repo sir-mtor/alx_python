@@ -9,10 +9,4 @@ class BaseGeometry:
     """
     pass
 
-# Test code
-if __name__ == "__main__":
-    bg = BaseGeometry()
 
-    print(bg)
-    print(dir(bg))
-    print(dir(BaseGeometry))
