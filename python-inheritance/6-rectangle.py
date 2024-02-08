@@ -56,10 +56,3 @@ class Rectangle(BaseGeometry):
         self.integer_validator("width", width)
         self.integer_validator("height", height)
 
-# Test code
-if __name__ == "__main__":
-    try:
-        r = Rectangle(0, 4)
-    except ValueError as e:
-        print("[ValueError]", e)
-    print("Is Rectangle a subclass of BaseGeometry?", issubclass(Rectangle, BaseGeometry))

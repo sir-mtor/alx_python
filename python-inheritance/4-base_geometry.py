@@ -18,7 +18,4 @@ class BaseGeometry:
         """
         raise Exception("area() is not implemented")
 
-# Test code
-if __name__ == "__main__":
-    bg = BaseGeometry()
-    print(dir(bg))
+

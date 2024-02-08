@@ -35,6 +35,7 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
+'''
 # Test code
 if __name__ == "__main__":
     bg = BaseGeometry()
@@ -56,3 +57,4 @@ if __name__ == "__main__":
         bg.integer_validator("distance", -4)
     except Exception as e:
         print("[{}] {}".format(e.__class__.__name__, e))
+'''

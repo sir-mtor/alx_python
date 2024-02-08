@@ -102,8 +102,3 @@ class Square(Rectangle):
         """
         return f"[Square] {self.__size}/{self.__size}"
 
-# Test code
-if __name__ == "__main__":
-    s = Square(13)
-    print(s)
-    print(s.area())
