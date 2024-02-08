@@ -8,8 +8,9 @@ def best_score(a_dictionary):
         # Return None if the dictionary is empty
         return None
 
-
+'''
 student_scores = {'Alice': 90, 'Bob': 75, 'Charlie': 85, 'David': 95}
 
 best_student = best_score(student_scores)
 print(best_student)
+'''
