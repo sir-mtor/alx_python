@@ -1,21 +1,11 @@
 class Square:
-    """
-    This class defines a square by a private instance attribute: size.
-
-    Attributes:
-        __size (int): The size of the square.
-
-    Methods:
-        __init__(self, size=0): Initializes a new instance of the Square class.
-    """
-
+   
+#This class defines a square by its size.
     def __init__(self, size=0):
-        """
-        Initializes a new instance of the Square class.
-
-        Parameters:
-            size (int, optional): The size of the square. Default is 0.
-        """
+        
+#Initializes a square with a given size.
+        
+#Args:size (int): The size of the square.
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
 
@@ -24,7 +14,6 @@ class Square:
 
         self.__size = size
 
-# Test the implementation
 if __name__ == "__main__":
     my_square_1 = Square(3)
     print(type(my_square_1))
