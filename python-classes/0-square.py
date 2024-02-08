@@ -1,20 +1,38 @@
-#This class defines a square by its size.
 class Square:
+    """
+    A class representing a square.
+
+    Attributes:
+        __size (int): The size of the square.
+
+    Methods:
+        __init__(self, size): Initializes a Square object with the given size.
+        __str__(self): Returns a string representation of the square.
+    """
+
     def __init__(self, size):
+        """
+        Initializes a Square object with the given size.
+
+        Parameters:
+            size (int): The size of the square.
+        """
         self.__size = size
 
     def __str__(self):
+        """
+        Returns a string representation of the square.
+
+        Returns:
+            str: A string representation of the square.
+        """
         return "{} by {} by {} by {}".format(self.__size, self.__size, self.__size, self.__size)
+
 
 if __name__ == "__main__":
     my_square = Square(3)
     print(type(my_square))
     print(my_square.__dict__)
-
-    #Initializes a square with a given size.
-        
-#Args:size (int): The size of the square.
-
 
     try:
         print(my_square.size)
@@ -25,35 +43,3 @@ if __name__ == "__main__":
         print(my_square.__size)
     except Exception as e:
         print(e)
-
-
-
-
-''''
-class Square:
-
-
-    
-    def __init__(self, size):
-        self.__size = size
-
-    def area(self):
-        return self.__size ** 2
-
-    def get_size(self):
-        return self.__size
-
-    def set_size(self, size):
-        self.__size = size
-
-square1 = Square(5)
-
-
-print("Size:", square1.get_size())
-print("Area:", square1.area())
-
-square1.set_size(7)
-
-print("Updated Size:", square1.get_size())
-print("Updated Area:", square1.area())
-'''
