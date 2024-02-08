@@ -1,3 +1,4 @@
+#This class defines a square by its size.
 class Square:
     def __init__(self, size):
         self.__size = size
@@ -5,11 +6,15 @@ class Square:
     def __str__(self):
         return "{} by {} by {} by {}".format(self.__size, self.__size, self.__size, self.__size)
 
-
 if __name__ == "__main__":
     my_square = Square(3)
     print(type(my_square))
     print(my_square.__dict__)
+
+    #Initializes a square with a given size.
+        
+#Args:size (int): The size of the square.
+
 
     try:
         print(my_square.size)
@@ -26,7 +31,8 @@ if __name__ == "__main__":
 
 ''''
 class Square:
-#This class defines a square by its size.
+
+
     
     def __init__(self, size):
         self.__size = size
@@ -42,9 +48,6 @@ class Square:
 
 square1 = Square(5)
 
-#Initializes a square with a given size.
-        
-#Args:size (int): The size of the square.
 
 print("Size:", square1.get_size())
 print("Area:", square1.area())
