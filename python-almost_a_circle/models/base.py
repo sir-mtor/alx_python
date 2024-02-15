@@ -11,7 +11,7 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-
+'''
 if __name__ == "__main__":
     
     b1 = Base()
@@ -28,3 +28,4 @@ if __name__ == "__main__":
 
     b5 = Base()
     print(b5.id)
+'''
