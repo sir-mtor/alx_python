@@ -100,7 +100,7 @@ class Rectangle(Base):
             self.y = args[4]
 
     def update(self, *args, **kwargs):
-          """ updating """
+        """ updating """
         if args:
             attrs = ["id", "width", "height", "x", "y"]
             for i, arg in enumerate(args[:len(attrs)]):
