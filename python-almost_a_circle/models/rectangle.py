@@ -98,3 +98,13 @@ class Rectangle(Base):
             self.x = args[3]
         if len(args) > 4:
             self.y = args[4]
+
+    def update(self, *args, **kwargs):
+          """ updating """
+        if args:
+            attrs = ["id", "width", "height", "x", "y"]
+            for i, arg in enumerate(args[:len(attrs)]):
+                setattr(self, attrs[i], arg)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
