@@ -1,3 +1,8 @@
+"""
+This module defines the Square class.
+
+The Square class inherits from the Rectangle class and represents a square shape.
+"""
 from models.rectangle import Rectangle
 """Initializes a Square instance."""
        
