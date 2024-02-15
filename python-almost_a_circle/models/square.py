@@ -7,8 +7,13 @@ from models.rectangle import Rectangle
 """Initializes a Square instance."""
        
 class Square(Rectangle):
-    def __init__(self, size, x=0, y=0, id=None):
+     """
+    This class represents a square shape.
+
+    It inherits from the Rectangle class and shares its attributes and methods.
+    """
+     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, size, x, y, id)
 
-    def __str__(self):
+     def __str__(self):
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
